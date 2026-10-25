@@ -1,0 +1,352 @@
+        /* Royal Blue and Gold Theme */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #FFFDF5;
+            color: #172033;
+            line-height: 1.6;
+        }
+
+        /* Navigation Bar */
+        nav {
+            background-color: #081B4B;
+            padding: 18px;
+            text-align: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+
+        nav a {
+            color: #FFFFFF;
+            text-decoration: none;
+            margin: 12px;
+            font-weight: bold;
+            display: inline-block;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            color: #D4AF37;
+            transform: translateY(-3px);
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #081B4B, #123A8C);
+            color: white;
+            text-align: center;
+            padding: 65px 20px;
+            border-bottom: 5px solid #D4AF37;
+            animation: fadeIn 1.5s ease;
+        }
+
+        header h1 {
+            color: #D4AF37;
+            font-size: 42px;
+            margin-bottom: 12px;
+        }
+
+        header p {
+            font-size: 18px;
+            margin: 5px;
+        }
+
+        header .tagline {
+            margin-top: 15px;
+            color: #FFFDF5;
+        }
+
+        /* Search Section */
+        .search {
+            background-color: white;
+            max-width: 1050px;
+            margin: 30px auto;
+            padding: 30px;
+            border-radius: 12px;
+            border-top: 4px solid #D4AF37;
+            box-shadow: 0 5px 15px #081B4B15;
+        }
+
+        h2 {
+            color: #081B4B;
+            margin-bottom: 20px;
+        }
+
+        .search form {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        input, select {
+            flex: 1 1 180px;
+            min-width: 0;
+            padding: 12px;
+            border: 1px solid #D8D1BC;
+            border-radius: 6px;
+            background-color: #FFFFFF;
+            font-size: 14px;
+        }
+
+        input:focus, select:focus {
+            outline: 2px solid #D4AF37;
+        }
+
+        button {
+            background-color: #081B4B;
+            color: white;
+            padding: 12px 22px;
+            border: 2px solid #D4AF37;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        button:hover {
+            background-color: #D4AF37;
+            color: #081B4B;
+        }
+
+        /* Property Listings */
+        .properties {
+            max-width: 1150px;
+            margin: 35px auto;
+            padding: 20px;
+        }
+
+        .section-heading {
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .section-heading p {
+            color: #5D6472;
+        }
+
+        .property-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        /* Property Cards */
+        .card {
+            background-color: #FFFFFF;
+            flex: 1 1 300px;
+            border-radius: 12px;
+            overflow: hidden;
+            border: 1px solid #E8DFC5;
+            box-shadow: 0 5px 15px #081B4B15;
+            transition: 0.4s;
+            animation: slideUp 1s ease;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 12px 25px #081B4B25;
+            border-color: #D4AF37;
+        }
+
+        .card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .card-content {
+            padding: 22px;
+        }
+
+        .tag {
+            display: inline-block;
+            background-color: #D4AF37;
+            color: #081B4B;
+            padding: 5px 12px;
+            border-radius: 5px;
+            font-weight: bold;
+            font-size: 13px;
+        }
+
+        .card h3 {
+            color: #081B4B;
+            margin: 12px 0 5px;
+            font-size: 21px;
+        }
+
+        .location {
+            color: #5D6472;
+            margin-bottom: 10px;
+        }
+
+        .price {
+            color: #123A8C;
+            font-size: 24px;
+            font-weight: bold;
+            margin: 10px 0;
+        }
+
+        .details {
+            margin: 7px 0;
+            font-size: 15px;
+        }
+
+        .amenities {
+            background-color: #FFFDF5;
+            padding: 10px;
+            border-radius: 6px;
+            margin-top: 12px;
+            font-size: 14px;
+            border-left: 3px solid #D4AF37;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #081B4B;
+            color: white;
+            text-decoration: none;
+            padding: 11px 18px;
+            border: 2px solid #D4AF37;
+            border-radius: 6px;
+            margin-top: 15px;
+            transition: 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #D4AF37;
+            color: #081B4B;
+        }
+
+        /* Comparison Table */
+        .comparison {
+            max-width: 1150px;
+            margin: 35px auto;
+            padding: 20px;
+            overflow-x: auto;
+        }
+
+        table {
+            width: 100%;
+            min-width: 650px;
+            border-collapse: collapse;
+            background-color: white;
+            box-shadow: 0 5px 15px #081B4B10;
+        }
+
+        th, td {
+            border: 1px solid #E8DFC5;
+            padding: 15px;
+            text-align: center;
+        }
+
+        th {
+            background-color: #081B4B;
+            color: #D4AF37;
+        }
+
+        tr:nth-child(even) {
+            background-color: #FFFDF5;
+        }
+
+        tr:hover {
+            background-color: #F8EBC2;
+        }
+
+        /* Contact Section */
+        .contact {
+            max-width: 1050px;
+            background-color: white;
+            margin: 35px auto;
+            padding: 30px;
+            border-radius: 12px;
+            border-left: 5px solid #D4AF37;
+            box-shadow: 0 5px 15px #081B4B15;
+        }
+
+        .contact p {
+            margin: 8px 0;
+        }
+
+        .contact a {
+            color: #123A8C;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #081B4B;
+            color: white;
+            text-align: center;
+            padding: 25px;
+            border-top: 4px solid #D4AF37;
+            margin-top: 40px;
+        }
+
+        footer span {
+            color: #D4AF37;
+        }
+
+        /* Animations */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+
+        @keyframes slideUp {
+            from {
+                opacity: 0;
+                transform: translateY(25px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Responsive Design */
+        @media (max-width: 600px) {
+            nav {
+                padding: 10px;
+            }
+
+            nav a {
+                margin: 6px;
+                font-size: 13px;
+            }
+
+            header {
+                padding: 45px 15px;
+            }
+
+            header h1 {
+                font-size: 30px;
+            }
+
+            header p {
+                font-size: 15px;
+            }
+
+            .search, .contact {
+                margin: 15px;
+                padding: 20px;
+            }
+
+            .properties, .comparison {
+                padding: 12px;
+            }
+
+            .card {
+                flex-basis: 100%;
+            }
+        }

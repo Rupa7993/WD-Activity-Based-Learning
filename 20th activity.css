@@ -1,0 +1,452 @@
+/* =====================================
+   GOLDEN SPOON CAFE
+   Burgundy & Gold Luxury Theme
+   ===================================== */
+
+/* 1. Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Georgia", "Times New Roman", serif;
+    background-color: #FFF8F0;
+    color: #35121B;
+    line-height: 1.7;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+/* 2. Header and Navigation */
+header {
+    background-color: #35121B;
+    color: #E3BF69;
+    padding: 20px 7%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    flex-wrap: wrap;
+    border-bottom: 3px solid #C9A34A;
+}
+
+header h2 {
+    font-size: 30px;
+    color: #E3BF69;
+    letter-spacing: 1.5px;
+}
+
+nav {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+}
+
+nav a {
+    color: #FFF8F0;
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #E3BF69;
+}
+
+/* 3. Hero Section */
+.hero {
+    min-height: 520px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 60px 20px;
+    color: #FFFFFF;
+
+    background:
+        linear-gradient(
+            rgba(53, 18, 27, 0.72),
+            rgba(53, 18, 27, 0.72)
+        ),
+        url("https://images.unsplash.com/photo-1414235077428-338989a2e8c0?w=1400")
+        center/cover no-repeat;
+}
+
+.hero h1 {
+    font-size: 52px;
+    color: #E3BF69;
+    margin-bottom: 15px;
+    line-height: 1.2;
+}
+
+.hero p {
+    font-size: 21px;
+    margin-bottom: 30px;
+    color: #FFF8F0;
+}
+
+/* 4. Buttons */
+.btn {
+    display: inline-block;
+    background-color: #C9A34A;
+    color: #35121B;
+    padding: 14px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 1px solid #E3BF69;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background-color: #E3BF69;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* 5. General Sections */
+section {
+    padding: 65px 7%;
+    text-align: center;
+}
+
+section h2 {
+    color: #761F36;
+    font-size: 34px;
+    margin-bottom: 25px;
+}
+
+/* Decorative heading underline */
+section h2::after {
+    content: "";
+    display: block;
+    width: 65px;
+    height: 3px;
+    background-color: #C9A34A;
+    margin: 12px auto 0;
+}
+
+/* 6. Menu and Chef Cards */
+.cards {
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 35px;
+}
+
+.card {
+    width: 300px;
+    max-width: 100%;
+    background-color: #FFFFFF;
+    color: #35121B;
+    border: 1px solid #E8D8B8;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 8px 25px rgba(53, 18, 27, 0.10);
+    transition: 0.3s;
+    padding-bottom: 22px;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 14px 30px rgba(53, 18, 27, 0.20);
+    border-color: #C9A34A;
+}
+
+.card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.card h3 {
+    color: #761F36;
+    font-size: 23px;
+    margin: 18px 12px 8px;
+}
+
+.card p {
+    color: #66525A;
+    font-size: 15px;
+    padding: 0 15px;
+    margin-bottom: 10px;
+}
+
+.card b {
+    display: inline-block;
+    color: #9B7629;
+    font-size: 20px;
+    margin-top: 5px;
+}
+
+/* 7. Chefs Section */
+.dark {
+    background-color: #35121B;
+    color: #FFF8F0;
+}
+
+.dark h2 {
+    color: #E3BF69;
+}
+
+.dark h2::after {
+    background-color: #E3BF69;
+}
+
+.dark .card {
+    background-color: #FFF8F0;
+    color: #35121B;
+    border-color: #C9A34A;
+}
+
+/* 8. About and Ambience */
+.intro {
+    max-width: 800px;
+    margin: 0 auto 30px;
+    font-size: 18px;
+    color: #66525A;
+}
+
+.ambience {
+    width: 100%;
+    max-width: 1000px;
+    height: 420px;
+    object-fit: cover;
+    margin: 0 auto;
+    border: 4px solid #C9A34A;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(53, 18, 27, 0.18);
+}
+
+/* 9. Customer Testimonials */
+.review {
+    background-color: #F0E2D1;
+    border-top: 1px solid #D9C19A;
+    border-bottom: 1px solid #D9C19A;
+}
+
+.review p {
+    font-size: 21px;
+    font-style: italic;
+    color: #5C2433;
+    margin-bottom: 15px;
+}
+
+.review b {
+    color: #8B6826;
+    font-size: 17px;
+}
+
+/* 10. Opening Hours and Location */
+.hours {
+    background-color: #FFF8F0;
+}
+
+.hours p {
+    font-size: 17px;
+    margin: 10px 0;
+    color: #66525A;
+}
+
+/* 11. Reservation Section */
+#reserve {
+    background-color: #F0E2D1;
+}
+
+form {
+    max-width: 700px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 18px;
+}
+
+input,
+select {
+    width: 100%;
+    min-width: 0;
+    padding: 15px;
+    font-family: Arial, sans-serif;
+    font-size: 15px;
+    color: #35121B;
+    background-color: #FFFFFF;
+    border: 1px solid #C9A34A;
+    border-radius: 6px;
+    outline: none;
+    transition: 0.3s;
+}
+
+input:focus,
+select:focus {
+    border-color: #761F36;
+    box-shadow: 0 0 0 3px rgba(118, 31, 54, 0.12);
+}
+
+/* Reservation Button */
+button {
+    grid-column: 1 / -1;
+    background-color: #761F36;
+    color: #FFF8F0;
+    border: 1px solid #C9A34A;
+    padding: 15px;
+    border-radius: 6px;
+    font-family: Arial, sans-serif;
+    font-size: 17px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background-color: #35121B;
+    color: #E3BF69;
+}
+
+/* 12. Footer */
+footer {
+    background-color: #35121B;
+    color: #E3BF69;
+    text-align: center;
+    padding: 25px 15px;
+    border-top: 3px solid #C9A34A;
+}
+
+footer p {
+    font-size: 15px;
+}
+
+/* 13. Tablet Responsive Design */
+@media (max-width: 900px) {
+    header {
+        justify-content: center;
+        text-align: center;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 18px;
+    }
+
+    .hero h1 {
+        font-size: 42px;
+    }
+
+    section {
+        padding: 50px 5%;
+    }
+
+    .ambience {
+        height: 350px;
+    }
+}
+
+/* 14. Mobile Responsive Design */
+@media (max-width: 600px) {
+    header {
+        flex-direction: column;
+        padding: 20px 15px;
+    }
+
+    header h2 {
+        font-size: 26px;
+    }
+
+    nav {
+        justify-content: center;
+        gap: 10px 16px;
+    }
+
+    nav a {
+        font-size: 14px;
+    }
+
+    .hero {
+        min-height: 400px;
+        padding: 45px 18px;
+    }
+
+    .hero h1 {
+        font-size: 33px;
+    }
+
+    .hero p {
+        font-size: 17px;
+    }
+
+    section {
+        padding: 42px 18px;
+    }
+
+    section h2 {
+        font-size: 28px;
+    }
+
+    .cards {
+        gap: 22px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 360px;
+    }
+
+    .card img {
+        height: 210px;
+    }
+
+    .intro {
+        font-size: 16px;
+    }
+
+    .ambience {
+        height: 250px;
+    }
+
+    .review p {
+        font-size: 18px;
+    }
+
+    .hours p {
+        font-size: 15px;
+    }
+
+    form {
+        grid-template-columns: 1fr;
+        gap: 14px;
+    }
+
+    button {
+        grid-column: auto;
+    }
+}
+
+/* 15. Small Mobile Screens */
+@media (max-width: 360px) {
+    header h2 {
+        font-size: 23px;
+    }
+
+    nav {
+        gap: 8px 12px;
+    }
+
+    nav a {
+        font-size: 13px;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    section h2 {
+        font-size: 25px;
+    }
+}
